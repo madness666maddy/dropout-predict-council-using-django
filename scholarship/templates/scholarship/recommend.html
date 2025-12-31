@@ -1,0 +1,12 @@
+<h2>Eligible Scholarships for {{ student.name }}</h2>
+
+{% if scholarships %}
+    <ul>
+        {% for s in scholarships %}
+            <li>{{ s.name }} - {{ s.amount }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No eligible scholarships</p>
+{% endif %}
+

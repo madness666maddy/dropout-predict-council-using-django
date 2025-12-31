@@ -1,0 +1,12 @@
+<h1>Scholarships</h1>
+
+<ul>
+    {% for s in scholarships %}
+        <li>
+            {{ s.name }}
+            <a href="{% url 'recommend_scholarship' 1 %}">
+                Check Eligibility
+            </a>
+        </li>
+    {% endfor %}
+</ul>
